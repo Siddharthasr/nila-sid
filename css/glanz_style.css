@@ -105,7 +105,7 @@ ol, ul {
 	margin-bottom: 30px;
 }
 a, a:hover, a:focus, a:active {
-	color: #6f6f6f
+	color: #020202
 }
 html {
 	min-height:100%;
@@ -222,7 +222,7 @@ h2 {
 	font:900 80px marsha, Arial;
 }
 .gla_middle_titles h2 {
-	font:400 70px/80px marsha, Dosis;
+	font:400 70px/80px marsha, Playfair Display;
 	margin-bottom: 60px;
 }
 
@@ -1330,7 +1330,7 @@ header {
 	position: relative;
 	right: 0;
 	top: 0;
-	font: 400 18px/18px Dosis;
+	font: 400 18px/18px Playfair Display;
 	float: right;
 }
 	.gla_default_menu ul {
@@ -1411,14 +1411,14 @@ header {
 	}
 	.gla_default_menu > ul > li > a {
 		display: block;
-		padding: 32px 20px;
+		padding: 25px 20px;
 		-webkit-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
 		height: 84px;
 	}
 	.gla_second_step .gla_default_menu > ul > li > a {
-		padding: 17px 20px;
+		padding: 25px 20px;
 		height: 52px;
 	}
 
@@ -1594,7 +1594,7 @@ ul.mega-menu {
 }
 
 	.gla_second_step .gla_main_menu {
-		top: 17px;
+		top: 22px;
 	}
 	.gla_main_menu_icon {
 		
@@ -1655,7 +1655,7 @@ ul.mega-menu {
 		font-size: 16px;
 		font-weight: normal;
 		right: 0;
-		font-family: Dosis;
+		font-family: Playfair Display;
 	}
 	.gla_main_menu_icon b span {
 		-webkit-transition: all 0.5s;
@@ -1767,7 +1767,7 @@ ul.mega-menu {
 			} 
 
 		.gla_main_menu_content_menu a {
-			font:400 30px/38px Dosis, Arial;
+			font:400 30px/38px Playfair Display, Arial;
 			display: block;
 			text-decoration: none;
 		}
@@ -1875,7 +1875,7 @@ ul.mega-menu {
 
 		
 		header nav {
-			height: 83px;
+			height: 70px;
 			background-color: rgba(255,255,255,0.3);
 			position: relative;
 			border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -2021,7 +2021,7 @@ ul.mega-menu {
 				background-color: rgba(255,255,255,0.9);
 			}
 			.gla_second_step header nav {
-				height: 52px;
+				height: 70px;
 				background-color: rgba(255,255,255,0.7);
 			}
 				.gla_second_step .gla_top_menu > li > a {
@@ -5651,7 +5651,7 @@ footer {
     bottom: 6px;
 	}
 	.gla_middle_titles h2 {
-		font-size: 30px;
+		font-size: 50px;
 		line-height: 30px;
 	}
 	.gla_middle_titles h2 span {
@@ -5740,7 +5740,7 @@ footer {
 
 
 .gla_main_menu {
-	top: 17px;
+	top: 22px;
 	position: relative;
 	float: right;
 	right: 5px;
@@ -5904,7 +5904,7 @@ footer {
 
 
 header nav {
-	height: 52px;
+	height: 70px;
 	background: rgba(255,255,255,0.7);
 }
 
@@ -5959,10 +5959,7 @@ header nav.gla_transp_nav {
 	bottom: 20px;
 }
 
-.gla_middle_titles h2 {
-	font:900 30px/30px Dosis, Arial;
-	margin-bottom: 50px;
-}
+
 .gla_icon_boxes {
 	margin-right: 0;
 	margin-left: 0;
