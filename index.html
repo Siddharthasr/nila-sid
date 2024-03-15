@@ -1,293 +1,52 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nila & Sid</title>
-    <meta name="description" content="We are excited to celebrate the union of our love and embark on this beautiful journey together.">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688353117/Engagement/thumbnail.png">
-    <link href="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688353114/Engagement/ico.png" rel="shortcut icon" type="image/png">
+    <title>Password Protected Site</title>
+    <link rel="stylesheet" href="glanz_library.css"> <!-- Include the glanz_library.css -->
+    <style>
+        /* Additional custom styles can be added here */
+        /* For example: */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
 
-    <meta property="og:title" content="Nila & Sid's Wedding Site" />
-    <meta property="og:description" content="We are excited to celebrate the union of our love and embark on this beautiful journey together." />
-    <meta property="og:image" content="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688353117/Engagement/thumbnail.png" />
-
-    <!-- Library CSS -->
-    <link href="css/glanz_library.css" rel="stylesheet">
-
-    <!-- Icons CSS -->
-    <link href="fonts/themify-icons.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/glanz_style.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
-
-    <!-- Other Fonts -->
-    <link href="fonts/marsha/stylesheet.css" rel="stylesheet">
-
+        #passwordForm {
+            width: 300px; /* Adjust width as needed */
+        }
+    </style>
 </head>
-
-
-<!-- Body -->
-<body class="gla_middle_titles">
-
-
-<!-- Page -->
-<div class="gla_page" id="gla_page">
-
-    
-    
-    <!-- To Top -->
-    <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
-
-   
-    
-    <!-- Header -->
-    <header>       
-
-        
-    
-        <nav class="gla_light_nav gla_transp_nav">
-
-            <div class="container">
-                
-                <div class="gla_logo_container clearfix">
-                    <div class="gla_logo_txt">
-                        <!-- Logo -->
-                        <a href="index.html" style="font:400 40px/80px marsha, Dosis;text-decoration: none;">Nila & Sid</a>
-                        
-                        
-                    </div>
-                </div>
-
-                <!-- Menu -->
-                <div class="gla_main_menu gla_main_menu_mobile">
-                    
-                    <div class="gla_main_menu_icon">
-                        <i></i><i></i><i></i><i></i>
-                        <b>Menu</b>
-                        <b class="gla_main_menu_icon_b">Back</b>
-                    </div>
-                </div>
-                
-                <!-- Menu Content -->
-                <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)">
-                    <!-- Over -->
-                    <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
-                </div>
-
-                <div class="gla_main_menu_content_menu gla_wht_txt text-right">
-                    <div class="container">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="registry.html">Wedding Registry</a></li>
-                            <li><a href="albums.html">Photos</a></li>
-                        </ul>
-
-                    </div>
-                    <!-- container end -->
-                </div>
-                <!-- menu content end -->
-
-            
-
-                <!-- Top Menu -->
-                <div class="gla_default_menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="registry.html">Wedding Registry</a></li>
-                        <li><a href="albums.html">Photos</a></li>
-                    </ul>
-                    </ul>
-                </div>
-                <!-- Top Menu End -->
-
-
-               
-            </div>
-            <!-- container end -->
-        </nav>
-        
-    </header>
-    <!-- Header End -->
-
-
-    <!-- Slider -->
-    <div class="gla_slider gla_image_bck  gla_wht_txt gla_fixed"  data-image="images/main_banner.jpg" data-stellar-background-ratio="0.8">
-
-        <!-- Over -->
-        <div class="gla_over" data-color="#9abab6" data-opacity="0.2"></div>
-
-
-        <div class="container">
-
-            
-            <!-- Slider Texts -->
-            <div class="gla_slide_txt gla_slide_center_bottom text-center">
-                <p><img src="images/animations/ourwedding_wh.gif" data-top-bottom="@src:images/animations/ourwedding_wh.gif" alt="" height="150"></p>
-                
-            </div>
-            <!-- Slider Texts End -->
-        
-        </div>
-        <!-- container end -->
-
-        <!-- Slide Down -->
-        <a class="gla_scroll_down gla_go" href="#gla_content">
-            <b></b>
-            Scroll
-        </a>
-
-
+<body>
+    <div id="passwordForm" class="glanz_card"> <!-- Apply glanz_card class -->
+        <h2 class="glanz_heading">Please enter the password to access the site:</h2> <!-- Apply glanz_heading class -->
+        <input type="password" id="passwordInput" class="glanz_input"> <!-- Apply glanz_input class -->
+        <button onclick="checkPassword()" class="glanz_button_primary">Submit</button> <!-- Apply glanz_button_primary class -->
     </div>
-    <!-- Slider End -->
 
-    <!-- Content -->
-    <section id="gla_content" class="gla_content">
+    <script>
+        // Define the correct password
+        const correctPassword = "a";
 
+        function checkPassword() {
+            // Get the value entered in the password input field
+            const enteredPassword = document.getElementById("passwordInput").value;
 
-       <!-- section -->
-        <section class="gla_section gla_image_bck" data-color="#f9fbf7">
-            
-
-            
-            <div class="container text-center">
-                <p><img src="images/animations/flowers.gif" data-bottom-top="@src:images/animations/flowers.gif" height="150" alt=""></p>
-                <h2>Our Story</h2>
-                <h4 class="gla_subtitle">Started in 2018 in Amherst, Massachusetts </h4>
-
-                <p class="text-left">Fate intervened when Sid and Nila unexpectedly crossed paths. What started as a simple introduction from mutual friends evolved into a profound connection. Though undefined at the beginning, their bond felt extraordinary.
-
-                    After weeks of conversations, Sid mustered the courage to ask Nila on a dinner date. Although taken aback initially, Nila sought guidance from her closest friends and eventually agreed to go on a date.
-                    
-                    Nila joined Sid at Alberto's in Northampton and their conversation flowed effortlessly, lasting for hours on end. Their first date marked the beginning of a love story that continues to thrive today.</p>
-
-                
-                
-            </div>
-            <!-- container end -->
-
-        </section>
-        <!-- section end -->
-
-
-       
-
-
-        <!-- section -->
-        <section class="gla_section">
-            
-            
-            <div class="container text-center">
-                <p><img src="images/animations/flowers2.gif" data-bottom-top="@src:images/animations/flowers2.gif" height="150" alt=""></p>
-                <h2>Albums</h2>
-                <p> We invite you to witness the magical moments that led us here. Within these cherished images, you will find snapshots capturing the our love story. These images encapsulate the love and commitment that brought us closer together, and we are thrilled to share them with you. </p>
-                <!-- boxes -->
-                <div class="gla_icon_boxes row text-left">
-
-                    <!-- item -->
-                    <div class="col-md-4 col-sm-6 col-md-offset-2">
-                        <a href="engagement.html" class="gla_news_block">
-                            <span class="gla_news_img">
-                                <span class="gla_over" data-image="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688345961/Engagement/engagement6-min.jpg"></span>    
-                            </span>
-                           
-
-                            <h4 style="padding-left: 30px;">The Engagement</h4>
-                            <p>New Hampshire</p>
-
-
-                        </a>
-                    </div> 
-
-                    <!-- item -->
-                    <div class="col-md-4 col-sm-6 ">
-                        <a href="proposal.html" class="gla_news_block">
-                            <span class="gla_news_img">
-                                <span class="gla_over" data-image="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688348904/Proposal/main.jpg"></span>  
-                            </span>
-                           
-
-                            <h4 style="padding-left: 30px;">The Proposal</h4>
-                            <p>Arizona</p>
-
-
-                        </a>
-                    </div> 
-
-
-                </div>
-                <!-- boxes end -->
-
-                
-            </div>
-            <!-- container end -->
-
-        </section>
-        <!-- section end -->
-
-
-
-        <!-- section -->
-        <section class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.8" data-image="images/group_banner.jpg">
-
-            <!-- Over -->
-            <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <h2>Stay tuned for more</h2>
-                
-                        <p style="font-weight: 400; font-size: medium;">We are excited to celebrate the union of our love and embark on this beautiful journey together. While we are eagerly planning our special day, we still haven’t finalized a date for the wedding. Your presence means the world to us, and we can't wait to celebrate this occasion surrounded by the love and support of our cherished friends and family. Stay tuned for more updates!</p>
-                    </div>
-                </div>
-       
-               
-
-                          
-                
-            </div>
-            <!-- container end -->
-
-        </section>
-        <!-- section end -->
-
-
-        <!-- section -->
-        <section class="gla_section">
-            
-            
-            <div class="container text-center">
-                <p><img src="images/animations/thnyou.gif" alt="" height="200" data-bottom-top="@src:images/animations/thnyou.gif"></p>
-                <p>&copy; Copyright Nila & Sid 2023</p>
-            </div>
-            <!-- container end -->
-
-        </section>
-        <!-- section end -->
-
-       
-
-    </section>
-    <!-- Content End --> 
-
-</div>
-<!-- Page End -->
-
-
-
-<!-- JQuery -->
-<script src="js/jquery-1.12.4.min.js"></script> 
-<!-- Library JS -->
-<script src="js/glanz_library.js"></script> 
-
-<!-- Theme JS -->
-<script src="js/glanz_script.js"></script>
-
-
+            // Check if the entered password matches the correct password
+            if (enteredPassword === correctPassword) {
+                // If the password is correct, redirect to index2.html
+                window.location.href = "index2.html";
+            } else {
+                // If the password is incorrect, display an error message
+                alert("Incorrect password! Please try again.");
+            }
+        }
+    </script>
 </body>
 </html>
