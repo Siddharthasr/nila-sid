@@ -1,35 +1,92 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Site</title>
-    <link rel="stylesheet" href="glanz_library.css"> <!-- Include the glanz_library.css -->
-    <style>
-        /* Additional custom styles can be added here */
-        /* For example: */
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
+    <title>Nila & Sid</title>
+    <meta name="description" content="We are excited to celebrate the union of our love and embark on this beautiful journey together.">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="shortcut icon" type="image/x-icon" href="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688353117/Engagement/thumbnail.png">
+    <link href="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688353114/Engagement/ico.png" rel="shortcut icon" type="image/png">
 
-        #passwordForm {
-            width: 300px; /* Adjust width as needed */
-        }
-    </style>
+    <meta property="og:title" content="Nila & Sid's Wedding Site" />
+    <meta property="og:description" content="We are excited to celebrate the union of our love and embark on this beautiful journey together." />
+    <meta property="og:image" content="https://res.cloudinary.com/daoxxvcdw/image/upload/v1688353117/Engagement/thumbnail.png" />
+
+    <!-- Library CSS -->
+    <link href="css/glanz_library.css" rel="stylesheet">
+
+    <!-- Icons CSS -->
+    <link href="fonts/themify-icons.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/glanz_style.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700%7COpen+Sans:300,400,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Other Fonts -->
+    <link href="fonts/marsha/stylesheet.css" rel="stylesheet">
+
 </head>
-<body>
-    <div id="passwordForm" class="glanz_card"> <!-- Apply glanz_card class -->
-        <h2 class="glanz_heading">Please enter the password to access the site:</h2> <!-- Apply glanz_heading class -->
-        <input type="password" id="passwordInput" class="glanz_input"> <!-- Apply glanz_input class -->
-        <button onclick="checkPassword()" class="glanz_button_primary">Submit</button> <!-- Apply glanz_button_primary class -->
-    </div>
 
+
+<!-- Body -->
+<body class="gla_middle_titles">
+
+
+<!-- Page -->
+<div class="gla_page" id="gla_page">
+
+    
+    
+    <!-- To Top -->
+    <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
+
+   
+    
+    <!-- Header -->
+    <header>       
+
+        
+    
+        <nav class="gla_light_nav">
+
+            <div class="container">
+                
+                <div class="gla_logo_container clearfix">
+                    <div class="gla_logo_txt">
+                        <!-- Logo -->
+                        <a href="index.html" style="font:400 40px/80px marsha, Dosis;text-decoration: none;">Nila & Sid</a>
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Menu -->
+                <div class="gla_main_menu gla_main_menu_mobile">
+                    
+                    <div class="gla_main_menu_icon">
+                        <i></i><i></i><i></i><i></i>
+                        <b>Menu</b>
+                        <b class="gla_main_menu_icon_b">Back</b>
+                    </div>
+                </div>
+                
+                <!-- Menu Content -->
+                <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)">
+                    <!-- Over -->
+                    <div class="gla_over" data-color="#000" data-opacity="0.7"></div>
+                </div>
+
+
+
+               
+            </div>
+            <!-- container end -->
+        </nav>
+        
+    </header>
     <script>
         // Define the correct password
         const correctPassword = "wedding123";
@@ -48,5 +105,45 @@
             }
         }
     </script>
+    <!-- Header End -->
+
+        <!-- section -->
+        <section class="gla_section gla_image_bck">
+
+          
+            
+            
+            <div class="container text-center">
+                <p><img src="images/animations/flowers3.gif" data-bottom-top="@src:images/animations/flowers3.gif" height="130" alt=""></p>
+                <h2>Please enter the password to access the site:</h2>
+                <input type="password" id="passwordInput" >
+                <button onclick="checkPassword()" class="glanz_button_primary">Submit</button>
+                
+            </div>
+            <!-- container end -->
+
+        </section>
+        <!-- section end -->
+
+
+
+
+    </section>
+    <!-- Content End --> 
+
+</div>
+<!-- Page End -->
+
+
+
+<!-- JQuery -->
+<script src="js/jquery-1.12.4.min.js"></script> 
+<!-- Library JS -->
+<script src="js/glanz_library.js"></script> 
+
+<!-- Theme JS -->
+<script src="js/glanz_script.js"></script>
+
+
 </body>
 </html>
